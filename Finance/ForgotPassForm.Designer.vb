@@ -99,7 +99,7 @@ Partial Class ForgotPassForm
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(39, 37)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "<"
+        Me.Button1.Text = "◀"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox1

@@ -12,6 +12,16 @@ Public Class LoginForm
         ' Create a new instance of the SHA256CryptoServiceProvider
         Dim sha256 As New SHA256CryptoServiceProvider()
 
+        If UserExists(username) Then
+            ' User exists continue
+        Else
+            ' User doesn't exist throw error
+            MessageBox.Show("Invalid username or password.")
+            txtUsername.Text = ""
+            txtPassword.Text = ""
+            Return
+        End If
+
         ' Retrieve the user's salt and hashed password from the database
         Dim salt As String = GetSaltFromDb(username)
         Dim hashedPassword As String = GetHashedPasswordFromDb(username)
@@ -34,6 +44,7 @@ Public Class LoginForm
             txtUsername.Text = ""
             txtPassword.Text = ""
         End If
+
     End Sub
 
     Private Function GetSaltFromDb(ByVal username As String) As String
@@ -129,4 +140,29 @@ Public Class LoginForm
     Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub
+    Private Function UserExists(ByVal username As String) As Boolean
+        ' Create a new connection to the database
+        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+
+        ' Open the connection
+        Try
+            connection.Open()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
+
+        ' Create a new command to check if the user already exists
+        Dim command As New SqlCommand("SELECT COUNT(*) FROM UsersData WHERE Username = @username", connection)
+        command.Parameters.AddWithValue("@username", username)
+
+        ' Execute the command and check the result
+        Dim count As Integer = CInt(command.ExecuteScalar())
+        connection.Close()
+
+        If count = 0 Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
 End Class

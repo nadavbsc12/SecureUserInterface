@@ -62,7 +62,7 @@ Partial Class RegisterForm
         '
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.Gray
-        Me.txtUsername.Location = New System.Drawing.Point(155, 88)
+        Me.txtUsername.Location = New System.Drawing.Point(157, 87)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(271, 38)
@@ -70,7 +70,7 @@ Partial Class RegisterForm
         '
         'txtEmail
         '
-        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.txtEmail.ForeColor = System.Drawing.Color.Gray
         Me.txtEmail.Location = New System.Drawing.Point(155, 224)
         Me.txtEmail.Multiline = True
@@ -80,7 +80,7 @@ Partial Class RegisterForm
         '
         'txtSecretWord
         '
-        Me.txtSecretWord.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
+        Me.txtSecretWord.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.txtSecretWord.ForeColor = System.Drawing.Color.Gray
         Me.txtSecretWord.Location = New System.Drawing.Point(155, 292)
         Me.txtSecretWord.Multiline = True
@@ -111,7 +111,7 @@ Partial Class RegisterForm
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(39, 37)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "<"
+        Me.Button1.Text = "◀"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox1

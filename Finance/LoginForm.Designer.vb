@@ -55,7 +55,7 @@ Partial Class LoginForm
         '
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.Gray
-        Me.txtUsername.Location = New System.Drawing.Point(158, 87)
+        Me.txtUsername.Location = New System.Drawing.Point(157, 87)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(271, 38)
@@ -65,7 +65,7 @@ Partial Class LoginForm
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.Gray
-        Me.txtPassword.Location = New System.Drawing.Point(158, 155)
+        Me.txtPassword.Location = New System.Drawing.Point(157, 155)
         Me.txtPassword.Multiline = True
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
@@ -107,6 +107,7 @@ Partial Class LoginForm
         '
         'LinkLabel1
         '
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.LinkColor = System.Drawing.Color.DimGray
         Me.LinkLabel1.Location = New System.Drawing.Point(247, 280)
@@ -131,6 +132,7 @@ Partial Class LoginForm
         '
         'LinkLabel2
         '
+        Me.LinkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LinkLabel2.LinkColor = System.Drawing.Color.DimGray
