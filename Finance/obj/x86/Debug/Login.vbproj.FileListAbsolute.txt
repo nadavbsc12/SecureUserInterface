@@ -1,0 +1,10 @@
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\bin\Debug\Login.exe
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\bin\Debug\Login.pdb
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\bin\Debug\Login.xml
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.LoginForm.resources
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.Resources.resources
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.vbproj.GenerateResource.Cache
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.exe
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.xml
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.pdb
+C:\Users\nadav\AppData\Local\Temporary Projects\Login\obj\x86\Debug\Login.RegisterForm.resources

@@ -1,0 +1,17 @@
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Release\Finance.exe.manifest
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Release\Finance.application
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Release\Finance.exe
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Release\Finance.pdb
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Release\Finance.xml
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.ForgotPassForm.resources
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.LoginForm.resources
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.Resources.resources
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.RegisterForm.resources
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.ResetPass.resources
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.vbproj.GenerateResource.Cache
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.TrustInfo.xml
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.exe.manifest
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.application
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.exe
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.xml
+C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Release\Finance.pdb
