@@ -117,7 +117,7 @@ Partial Class ForgotPassForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Finance.My.Resources.Resources.ForgotPass
-        Me.ClientSize = New System.Drawing.Size(481, 382)
+        Me.ClientSize = New System.Drawing.Size(477, 382)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.SubmitBtn)

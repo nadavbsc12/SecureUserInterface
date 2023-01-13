@@ -40,7 +40,7 @@ Partial Class RegisterForm
         Me.RegisterBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RegisterBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(177, Byte))
         Me.RegisterBtn.ForeColor = System.Drawing.Color.White
-        Me.RegisterBtn.Location = New System.Drawing.Point(43, 361)
+        Me.RegisterBtn.Location = New System.Drawing.Point(37, 361)
         Me.RegisterBtn.Name = "RegisterBtn"
         Me.RegisterBtn.Size = New System.Drawing.Size(402, 58)
         Me.RegisterBtn.TabIndex = 4
@@ -129,7 +129,7 @@ Partial Class RegisterForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.Finance.My.Resources.Resources.Register
-        Me.ClientSize = New System.Drawing.Size(493, 449)
+        Me.ClientSize = New System.Drawing.Size(480, 449)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
