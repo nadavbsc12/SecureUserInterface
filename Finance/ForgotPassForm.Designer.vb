@@ -30,6 +30,7 @@ Partial Class ForgotPassForm
         Me.SubmitBtn = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtError = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,7 +70,7 @@ Partial Class ForgotPassForm
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.Label1.Location = New System.Drawing.Point(182, 30)
+        Me.Label1.Location = New System.Drawing.Point(166, 25)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(220, 31)
@@ -106,11 +107,23 @@ Partial Class ForgotPassForm
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.Finance.My.Resources.Resources.Test
-        Me.PictureBox1.Location = New System.Drawing.Point(105, 16)
+        Me.PictureBox1.Location = New System.Drawing.Point(89, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(79, 59)
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
+        '
+        'txtError
+        '
+        Me.txtError.BackColor = System.Drawing.Color.Transparent
+        Me.txtError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtError.Location = New System.Drawing.Point(1, 65)
+        Me.txtError.Name = "txtError"
+        Me.txtError.Size = New System.Drawing.Size(477, 20)
+        Me.txtError.TabIndex = 20
+        Me.txtError.Text = "txtError"
+        Me.txtError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtError.Visible = False
         '
         'ForgotPassForm
         '
@@ -118,6 +131,7 @@ Partial Class ForgotPassForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Finance.My.Resources.Resources.ForgotPass
         Me.ClientSize = New System.Drawing.Size(477, 382)
+        Me.Controls.Add(Me.txtError)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.SubmitBtn)
@@ -143,4 +157,5 @@ Partial Class ForgotPassForm
     Friend WithEvents SubmitBtn As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents txtError As System.Windows.Forms.Label
 End Class

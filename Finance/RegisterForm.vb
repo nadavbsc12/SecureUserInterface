@@ -78,13 +78,13 @@ Public Class RegisterForm
 
             ' Execute the command
             command.ExecuteNonQuery()
-            MsgBox("Success!")
             LoginForm.Show()
             Me.Visible = False
             txtEmail.Text = ""
             txtPassword.Text = ""
             txtSecretWord.Text = ""
             txtUsername.Text = ""
+            txtError.Visible = False
         Catch ex As Exception
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
@@ -148,34 +148,42 @@ Public Class RegisterForm
     Private Function Checks(ByVal username As String, ByVal email As String) As Boolean
         If UserExists(username) Then
             ' Show an error message
-            MessageBox.Show("Username already exists.")
+            txtError.Text = "Username already exists."
+            txtError.Visible = True
             Return False
         End If
         If EmailExists(email) Then
             ' Show an error message
-            MessageBox.Show("Email already exists.")
+            txtError.Text = "Email already exists."
+            txtError.Visible = True
             Return False
         End If
 
         If txtPassword.Text.Length < 6 Then
-            MessageBox.Show("Password must be at least 6 characters.")
+            txtError.Text = "Password must be at least 6 characters."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtPassword.Text, "[a-z]") Then
-            MessageBox.Show("Password must contain at least one lowercase letter.")
+            txtError.Text = "Password must contain at least one lowercase letter."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtPassword.Text, "[A-Z]") Then
-            MessageBox.Show("Password must contain at least one uppercase letter.")
+            txtError.Text = "Password must contain at least one uppercase letter."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtPassword.Text, "[!@#\$%^&*()]") Then
-            MessageBox.Show("Password must contain at least one symbol.")
+            txtError.Text = "Password must contain at least one symbol."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtEmail.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$") Then
-            MessageBox.Show("Invalid email address.")
+            txtError.Text = "Invalid email address."
+            txtError.Visible = True
             Return False
         End If
 
         If txtUsername.Text.Length < 6 Then
-            MessageBox.Show("Username must be at least 6 characters.")
+            txtError.Text = "Username must be at least 6 characters."
+            txtError.Visible = True
             Return False
         End If
 
@@ -190,6 +198,7 @@ Public Class RegisterForm
         LoginForm.Show()
         Me.Visible = False
         txtEmail.Text = ""
+        txtError.Visible = False
         txtPassword.Text = ""
         txtSecretWord.Text = ""
         txtUsername.Text = ""
@@ -217,5 +226,9 @@ Public Class RegisterForm
         If e.KeyCode = Keys.Enter Then
             RegisterBtn.PerformClick()
         End If
+    End Sub
+
+    Private Sub RegisterForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

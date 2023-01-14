@@ -19,11 +19,14 @@ Public Class ForgotPassForm
         If UserExists(username) Then
             'Valid Username
         Else
-            MessageBox.Show("Username Doesn't exists.")
+            txtError.Text = "Username Doesn't exists."
+            txtError.Visible = True
             Return
         End If
+
         If Not Regex.IsMatch(txtEmail.Text, "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$") Then
-            MessageBox.Show("Invalid email address.")
+            txtError.Text = "Invalid email address."
+            txtError.Visible = True
             Return
         End If
 
@@ -45,6 +48,7 @@ Public Class ForgotPassForm
         If hashedSaltedSecretKey = hasedsecretkey And email = emailDB Then
             ' successful
             ResetPass.Show()
+            txtError.Visible = False
             Me.Visible = False
             txtEmail.Text = ""
             txtSecretWord.Text = ""
@@ -53,7 +57,8 @@ Public Class ForgotPassForm
             txtEmail.Text = ""
             txtSecretWord.Text = ""
             txtUsername.Text = ""
-            MessageBox.Show("Invalid details.")
+            txtError.Text = "Invalid details."
+            txtError.Visible = True
         End If
     End Sub
 
@@ -189,6 +194,7 @@ Public Class ForgotPassForm
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         LoginForm.Show()
         Me.Visible = False
+        txtError.Visible = False
         txtEmail.Text = ""
         txtSecretWord.Text = ""
         txtUsername.Text = ""

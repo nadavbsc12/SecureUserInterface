@@ -40,7 +40,8 @@ Public Class ResetPass
             ' Passwords Match
         Else
             ' Passwords Dont Match
-            MsgBox("Passwords Dont Match")
+            txtError.Text = "Passwords dont match"
+            txtError.Visible = True
             txtResetPass.Text = ""
             txtResetPassConfirm.Text = ""
             Return
@@ -53,7 +54,8 @@ Public Class ResetPass
         End If
 
         If hashedSaltedPassword = hashedPassword Then
-            MsgBox("New Password can't be as the previous Password")
+            txtError.Text = "New Password can't be as the previous Password"
+            txtError.Visible = True
             txtResetPass.Text = ""
             txtResetPassConfirm.Text = ""
             Return
@@ -76,6 +78,7 @@ Public Class ResetPass
             ForgotPassForm.txtEmail.Text = ""
             txtResetPass.Text = ""
             txtResetPassConfirm.Text = ""
+            txtError.Visible = False
             LoginForm.Show()
             Me.Visible = False
         Catch ex As Exception
@@ -117,16 +120,20 @@ Public Class ResetPass
     Private Function Checks(ByVal username As String) As Boolean
 
         If txtResetPass.Text.Length < 6 Then
-            MessageBox.Show("Password must be at least 6 characters.")
+            txtError.Text = "Password must be at least 6 characters."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtResetPass.Text, "[a-z]") Then
-            MessageBox.Show("Password must contain at least one lowercase letter.")
+            txtError.Text = "Password must contain at least one lowercase letter."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtResetPass.Text, "[A-Z]") Then
-            MessageBox.Show("Password must contain at least one uppercase letter.")
+            txtError.Text = "Password must contain at least one uppercase letter."
+            txtError.Visible = True
             Return False
         ElseIf Not Regex.IsMatch(txtResetPass.Text, "[!@#\$%^&*()]") Then
-            MessageBox.Show("Password must contain at least one symbol.")
+            txtError.Text = "Password must contain at least one symbol."
+            txtError.Visible = True
             Return False
         End If
 
@@ -168,6 +175,7 @@ Public Class ResetPass
         ForgotPassForm.txtEmail.Text = ""
         txtResetPass.Text = ""
         txtResetPassConfirm.Text = ""
+        txtError.Visible = False
         LoginForm.Show()
         Me.Visible = False
     End Sub

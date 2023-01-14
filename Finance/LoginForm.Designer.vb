@@ -33,6 +33,7 @@ Partial Class LoginForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.txtError = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,6 +153,18 @@ Partial Class LoginForm
         Me.PictureBox3.TabIndex = 19
         Me.PictureBox3.TabStop = False
         '
+        'txtError
+        '
+        Me.txtError.BackColor = System.Drawing.Color.Transparent
+        Me.txtError.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtError.Location = New System.Drawing.Point(-1, 61)
+        Me.txtError.Name = "txtError"
+        Me.txtError.Size = New System.Drawing.Size(484, 20)
+        Me.txtError.TabIndex = 21
+        Me.txtError.Text = "txtError"
+        Me.txtError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtError.Visible = False
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -159,6 +172,7 @@ Partial Class LoginForm
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.Finance.My.Resources.Resources.asdasd
         Me.ClientSize = New System.Drawing.Size(483, 303)
+        Me.Controls.Add(Me.txtError)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.LinkLabel1)
@@ -192,5 +206,6 @@ Partial Class LoginForm
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents txtError As System.Windows.Forms.Label
 
 End Class
