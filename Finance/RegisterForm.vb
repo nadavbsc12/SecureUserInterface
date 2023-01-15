@@ -49,7 +49,7 @@ Public Class RegisterForm
 
     Private Sub InsertUserIntoDb(ByVal username As String, ByVal hashedSaltedPassword As String, ByVal salt As String, ByVal email As String, ByVal hashedSaltedSecretWord As String)
         ' Create a new connection to the database
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         ' Open the connection
         Try
@@ -94,7 +94,7 @@ Public Class RegisterForm
     End Sub
     Private Function UserExists(ByVal username As String) As Boolean
         ' Create a new connection to the database
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         ' Open the connection
         Try
@@ -119,7 +119,7 @@ Public Class RegisterForm
     End Function
     Private Function EmailExists(ByVal email As String) As Boolean
         ' Create a new connection to the database
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         ' Open the connection
         Try

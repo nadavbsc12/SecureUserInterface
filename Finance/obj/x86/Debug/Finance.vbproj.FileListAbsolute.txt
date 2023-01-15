@@ -27,3 +27,6 @@ C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\bin\Debug\Finance.applicati
 C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Debug\Finance.TrustInfo.xml
 C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Debug\Finance.exe.manifest
 C:\Users\nadav\Desktop\Owner\VB\2022\Finance\Finance\obj\x86\Debug\Finance.application
+C:\Users\NadavShlush\Desktop\Nadav\VB\Finance\Finance\obj\x86\Debug\Finance.exe
+C:\Users\NadavShlush\Desktop\Nadav\VB\Finance\Finance\obj\x86\Debug\Finance.xml
+C:\Users\NadavShlush\Desktop\Nadav\VB\Finance\Finance\obj\x86\Debug\Finance.pdb

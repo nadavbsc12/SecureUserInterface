@@ -23,7 +23,7 @@ Public Class ResetPass
 
     Private Sub SubmitBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SubmitBtn.Click
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
         Dim username As String = ForgotPassForm.txtUsername.Text
         Dim password As String = txtResetPass.Text
         Dim salt As String = GetSaltFromDb(username)
@@ -60,12 +60,12 @@ Public Class ResetPass
             txtResetPassConfirm.Text = ""
             Return
         End If
-            'Open Connection
-            Try
-                connection.Open()
-            Catch ex As Exception
-                MsgBox(ex.Message, MsgBoxStyle.Critical)
-            End Try
+        'Open Connection
+        Try
+            connection.Open()
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
+        End Try
         Try
             'Create Command
             Dim command As New SqlCommand("Update UsersData SET HashedPassword = @hashsaltedpassword WHERE username = @username", connection)
@@ -91,7 +91,7 @@ Public Class ResetPass
 
     Private Function GetSaltFromDb(ByVal username As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try
@@ -142,7 +142,7 @@ Public Class ResetPass
     End Function
     Private Function GetHashedPasswordFromDb(ByVal username As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try

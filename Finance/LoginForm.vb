@@ -85,7 +85,7 @@ Public Class LoginForm
 
     Private Function GetSaltFromDb(ByVal username As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try
@@ -114,7 +114,7 @@ Public Class LoginForm
 
     Private Function GetHashedPasswordFromDb(ByVal username As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try
@@ -180,7 +180,7 @@ Public Class LoginForm
     End Sub
     Private Function UserExists(ByVal username As String) As Boolean
         ' Create a new connection to the database
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         ' Open the connection
         Try
@@ -205,7 +205,7 @@ Public Class LoginForm
     End Function
     Private Function GetSaltFromDbEmail(ByVal EmailDB As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try
@@ -234,7 +234,7 @@ Public Class LoginForm
 
     Private Function GetHashedPasswordFromDbEmail(ByVal EmailDB As String) As String
         'Create Connection
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         'Open Connection
         Try
@@ -262,7 +262,7 @@ Public Class LoginForm
     End Function
     Private Function EmailExists(ByVal EmailDB As String) As Boolean
         ' Create a new connection to the database
-        Dim connection As New SqlConnection("Data Source=DESKTOP-116TR10\SQLEXPRESS01;Initial Catalog=Finance;Integrated Security=True")
+        Dim connection As New SqlConnection("Data Source=LAPTOP-15L8B9U4\SQLEXPRESS;Initial Catalog=Finance;Integrated Security=True")
 
         ' Open the connection
         Try
